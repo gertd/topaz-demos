@@ -1,0 +1,23 @@
+{
+    "objects": [
+        {
+            "key": "rick@the-citadel.com",
+            "type": "identity",
+            "properties": {
+                "kind": "IDENTITY_KIND_EMAIL",
+                "provider": "dex",
+                "verified": true
+            }
+        },
+        {
+            "key": "CiRmZDA2MTRkMy1jMzlhLTQ3ODEtYjdiZC04Yjk2ZjVhNTEwMGQSBWxvY2Fs",
+            "type": "user",
+            "display_name": "Rick Sanchez",
+            "properties": {
+                "email": "rick@the-citadel.com",
+                "picture": "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Rick%20Sanchez.jpg",
+                "status": "USER_STATUS_ACTIVE"
+            }
+        }   
+    ]
+}

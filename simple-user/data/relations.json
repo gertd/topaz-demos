@@ -1,0 +1,15 @@
+{
+    "relations": [
+        {
+            "subject": {
+                "type": "user",
+                "key": "CiRmZDA2MTRkMy1jMzlhLTQ3ODEtYjdiZC04Yjk2ZjVhNTEwMGQSBWxvY2Fs"
+            },
+            "relation": "identifier",
+            "object": {
+                "type": "identity",
+                "key": "rick@the-citadel.com"
+            }
+        }
+    ]
+}
