@@ -1,0 +1,15 @@
+{
+    "relations": [
+        {
+            "subject": {
+                "type": "user",
+                "key": "john.doe@acmecorp.com"
+            },
+            "relation": "identifier",
+            "object": {
+                "type": "identity",
+                "key": "1234567890"
+            }
+        }
+    ]
+}

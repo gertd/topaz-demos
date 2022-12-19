@@ -1,0 +1,18 @@
+{
+    "objects": [
+        {
+            "key": "1234567890",
+            "type": "identity",
+            "properties": {
+                "kind": "IDENTITY_KIND_PID",
+                "provider": "auth0",
+                "verified": true
+            }
+        },
+        {
+            "key": "john.doe@acmecorp.com",
+            "type": "user",
+            "display_name": "John Doe"
+        }   
+    ]
+}
