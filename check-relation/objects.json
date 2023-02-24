@@ -1,0 +1,12 @@
+{
+    "objects": [
+        {
+            "key": "myWell",
+            "type": "well"
+        },
+        {
+            "key": "myWellbore",
+            "type": "wellbore"
+        }
+    ]
+}

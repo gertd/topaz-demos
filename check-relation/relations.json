@@ -1,0 +1,15 @@
+{
+    "relations": [
+        {
+            "subject": {
+                "type": "wellbore",
+                "key": "myWellbore"
+            },
+            "relation": "parent",
+            "object": {
+                "type": "well",
+                "key": "myWell"
+            }
+        }
+    ]
+}

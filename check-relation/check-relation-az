@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# stingify the input args
+ARGS=$(cat <<EOF | jq -Rsa .
+{
+  "args": {
+    "object": {
+      "key": "myWell",
+      "type": "well"
+    },
+    "relation": {
+      "name": "parent",
+      "object_type": "well"
+    },
+    "subject": {
+      "key": "myWellbore",
+      "type": "wellbore"
+    }
+  }
+}
+EOF
+)
+
+cat <<EOF | grpcurl -insecure -d @ localhost:8282 aserto.authorizer.v2.Authorizer.Query  | jq .
+{
+  "input": ${ARGS},
+  "query": "x = ds.check_relation(input.args)"
+}  
+EOF
+

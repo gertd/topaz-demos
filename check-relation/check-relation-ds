@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+read -r -d '' DATA <<-EOM
+{
+  "subject": {
+    "type": "wellbore",
+    "key": "myWellbore"
+  },
+  "relation": {
+    "name": "parent",
+    "objectType": "well"
+  },
+  "object": {
+    "type": "well",
+    "key": "myWell"
+  }
+}
+EOM
+
+grpcurl -insecure -d "${DATA}" localhost:9292 aserto.directory.reader.v2.Reader.CheckRelation | jq .
